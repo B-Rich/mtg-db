@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Libreria Azoriana</title>
+        {% else %}
+        <title>Welcome to Libreria Azoriana, the Collector's Collection Manager</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Libreria Azoriana: <a href = "/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
